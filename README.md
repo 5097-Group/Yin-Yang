@@ -8,7 +8,7 @@ VR Game 🎬 youtube demo link: (tb updated)
 🧙🏻‍♀️ 
 🧙🏻‍♀️ 
 
-## geting start
+## Geting Start
 To use this project, you'll need to have Unity version 2021.3.16f1 or later installed. You can download Unity from the official website: https://unity.com/.
 Once you have Unity installed, you can download or clone this repository to your local machine.
 
