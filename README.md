@@ -22,7 +22,8 @@ Allow user to select different rooms.
 XXXXX
 
 ### 3. Yang Room
-xxxxx
+In the yang room, user can gain some exercises by moving their body, there are bunch of screens will pop
+to the player, and the player just need to copy the action in the screen, try to act as the same as the screen.
 
 ## Update & Progress
 ### Xiaolan Wu
@@ -38,8 +39,20 @@ xxxxx
 #### 2023/3/14
 1. Asset create: create hole in the wall asset with probuilder
 
-### 
-####
+### Xun Zhu
+#### 2023/3/10
+1. Quick initialize the yang scene, try to implement the screen model.
+
+#### 2023/3/11
+1. Run the world but fail, may be the version problem.
+
+#### 2023/3/12
+1. Use Xiaolan's main branch to re-create yang scene, this time works.
+2. Re-create the model in the yangSample scene, and build simple UI in the page.
+3. Add the audio in the yangSample scene.
+
+#### 2023/3/14
+1. 
 
 ### 
 #### 
