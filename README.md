@@ -52,7 +52,11 @@ to the player, and the player just need to copy the action in the screen, try to
 3. Add the audio in the yangSample scene.
 
 #### 2023/3/14
-1. 
+1. Import the danceWall created by Xiaolan to yangSample, and start create more wall.
+
+#### 2023/3/15
+1. Create 6 DanceWalls in total and with different colors.
+2. Import a scene from internet, change the background scene for yangSample.
 
 ### 
 #### 
