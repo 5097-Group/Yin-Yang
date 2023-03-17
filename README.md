@@ -20,6 +20,8 @@ Allow user to select different rooms.
 
 ### 2. Yin Room
 In the yin room, user can enjoy the beautiful scene along with breathing guidance and soft background sound.
+![image](https://user-images.githubusercontent.com/120827194/225977987-14961323-de68-49e2-be9a-0f983d735128.png)
+
 
 ### 3. Yang Room
 In the yang room, user can gain some exercises by moving their body, there are bunch of screens will pop
