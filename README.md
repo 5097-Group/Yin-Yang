@@ -5,7 +5,7 @@ Yin-Yang - rest in virtual world 🎬 youtube demo link: (tb updated)
 - **Group**: 3
 - **Members**:
   - 🧙‍♂️ Xiaolan Wu <wu.xiaol@northeastern.edu> 
-  - 🧙🏻‍♀️ Yufei Mei <xxx>
+  - 🧙🏻‍♀️ Yufei Mei <charlottemay234@gmail.com>
   - 🧙🏻‍♀️ <a href="https://www.linkedin.com/in/xun-zhu/" target="_blank">Xun Zhu</a> <rayzzzx13@gmail.com>
 
 ## Geting Start
