@@ -19,7 +19,7 @@ Allow user to select different rooms.
  
 
 ### 2. Yin Room
-XXXXX
+In the yin room, user can enjoy the beautiful scene along with breathing guidance and soft background sound.
 
 ### 3. Yang Room
 In the yang room, user can gain some exercises by moving their body, there are bunch of screens will pop
@@ -57,6 +57,19 @@ to the player, and the player just need to copy the action in the screen, try to
 #### 2023/3/15
 1. Create 6 DanceWalls in total and with different colors.
 2. Import a scene from internet, change the background scene for yangSample.
+
+### Yufei Mei
+#### 2023/03/10
+1. Designed the yin room scene
+2. Initialized yin room scene
+
+#### 2023/03/12
+1. Added loop background music to yin room scene
+2. Adjust the objects location that the VR headset can see
+2. Added the instruction welcome board
+
+#### 2023/03/15
+1. Tried to add haptic effect by default but failed
 
 ### 
 #### 
