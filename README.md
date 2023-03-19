@@ -60,6 +60,16 @@ to the player, and the player just need to copy the action in the screen, try to
 1. Create 6 DanceWalls in total and with different colors.
 2. Import a scene from internet, change the background scene for yangSample.
 
+#### 2023/3/18
+1. Project crash on my end due to the iCloud issue, delete the old one and put 
+everything in a new folder with suffix “.nosync”. The project automatically 
+created existing files with suffix “ 2”, and this cause the project fail to 
+load and run, thus remove everything and recreated a new one.
+2. Create a canvas showing some information with button OK to make it disappear, 
+and a “Main Page” button to go back to main page.
+3. Change the danceWall object to prefabs, add functionality to them, right now 
+they can pop to user automatically. Create few scripts that handle these functions.
+
 ### Yufei Mei
 #### 2023/03/10
 1. Designed the yin room scene
