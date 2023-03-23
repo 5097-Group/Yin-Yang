@@ -11,10 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/yangSample.unity
     guid: 67481f91b41e94f149345e82289889ae
+  - enabled: 1
+    path: Assets/Scenes/yinSample.unity
+    guid: a23e35ccd03a64a6bbe048c47e93d450
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed72be55522c8448bae8b0d66fa21adf,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ad4050bc0deda4e238354e959df0f1f4,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a4c68ca72a83449f938d669337cb305,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b53b89ca9241447b0a56ff61fa931615,
       type: 2}
