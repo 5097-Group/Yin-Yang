@@ -31,7 +31,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomDanceWall()
     {
         int danceWallIndex = Random.Range(0, danceWallPrefabs.Length);
-        Vector3 spawnPos = new Vector3(-74,-7,30);
+        Vector3 spawnPos = new Vector3(-74,(float)-4.8,24);
         //Vector3 spawnPos = new Vector3(transform.position);
         Instantiate(danceWallPrefabs[danceWallIndex], spawnPos, danceWallPrefabs[danceWallIndex].transform.rotation);
     }
