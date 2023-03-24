@@ -41,6 +41,11 @@ to the player, and the player just need to copy the action in the screen, try to
 #### 2023/3/14
 1. Asset create: create hole in the wall asset with probuilder
 
+#### 2023/3/23 &24
+1. Yang Scene: Adjust wall postion & spped to increase the experience of user
+2. Yin Scene: create basic object for hapitc function
+3. Yang Scene: Adjust the way wall spwan. Walls will be spawn only after user click ok.
+
 ### Xun Zhu
 #### 2023/3/10
 1. Quick initialize the yang scene, try to implement the screen model.
