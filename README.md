@@ -75,6 +75,12 @@ and a “Main Page” button to go back to main page.
 3. Change the danceWall object to prefabs, add functionality to them, right now 
 they can pop to user automatically. Create few scripts that handle these functions.
 
+#### 2023/3/25
+1. Add buttons stop and resume.
+
+#### 2023/3/27
+1. Some research on assets.
+
 ### Yufei Mei
 #### 2023/03/10
 1. Designed the yin room scene
