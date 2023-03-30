@@ -49,6 +49,7 @@ to the player, and the player just need to copy the action in the screen, try to
 #### 2023/3/28
 1. Yin Scene: create breathingCue Scale Up function,  which allow object scaleup and down in loop
 2. Yin Scene: create UI guide for breathing Object.
+3. Yin Scene: update the texture of object.
 
 ### Xun Zhu
 #### 2023/3/10
