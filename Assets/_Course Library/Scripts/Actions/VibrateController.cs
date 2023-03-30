@@ -14,6 +14,7 @@ public class VibrateController : MonoBehaviour
     private void Awake()
     {
         controller = GetComponent<XRController>();
+        Debug.Log("awake controller: " + controller.name);
     }
 
     public void Vibrate(float amplitude, float duration)
