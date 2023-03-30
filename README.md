@@ -46,6 +46,10 @@ to the player, and the player just need to copy the action in the screen, try to
 2. Yin Scene: create basic object for hapitc function
 3. Yang Scene: Adjust the way wall spwan. Walls will be spawn only after user click ok.
 
+#### 2023/3/28
+1. Yin Scene: create breathingCue Scale Up function,  which allow object scaleup and down in loop
+2. Yin Scene: create UI guide for breathing Object.
+
 ### Xun Zhu
 #### 2023/3/10
 1. Quick initialize the yang scene, try to implement the screen model.
