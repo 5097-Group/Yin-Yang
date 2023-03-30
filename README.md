@@ -81,6 +81,9 @@ they can pop to user automatically. Create few scripts that handle these functio
 #### 2023/3/27
 1. Some research on assets.
 
+#### 2023/3/29
+1. Try add slider or input field to control the DanceWall's speed.
+
 ### Yufei Mei
 #### 2023/03/10
 1. Designed the yin room scene
