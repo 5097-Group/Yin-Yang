@@ -46,6 +46,10 @@ to the player, and the player just need to copy the action in the screen, try to
 2. Yin Scene: create basic object for hapitc function
 3. Yang Scene: Adjust the way wall spwan. Walls will be spawn only after user click ok.
 
+#### 2023/3/28
+1. Yin Scene: create breathingCue Scale Up function,  which allow object scaleup and down in loop
+2. Yin Scene: create UI guide for breathing Object.
+
 ### Xun Zhu
 #### 2023/3/10
 1. Quick initialize the yang scene, try to implement the screen model.
@@ -74,6 +78,15 @@ load and run, thus remove everything and recreated a new one.
 and a “Main Page” button to go back to main page.
 3. Change the danceWall object to prefabs, add functionality to them, right now 
 they can pop to user automatically. Create few scripts that handle these functions.
+
+#### 2023/3/25
+1. Add buttons stop and resume.
+
+#### 2023/3/27
+1. Some research on assets.
+
+#### 2023/3/29
+1. Try add slider or input field to control the DanceWall's speed.
 
 ### Yufei Mei
 #### 2023/03/10
