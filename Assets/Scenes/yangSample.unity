@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 137500930}
   - component: {fileID: 137500929}
   m_Layer: 0
-  m_Name: Button
+  m_Name: OK Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -968,8 +968,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1028825518}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 25
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2647,9 +2647,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a894769b7a4147b389a8cfd3e2cc7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 7395632571243132052, guid: 9259eb047092d4a119a335f104d5ef40,
-    type: 3}
+  movingObjectPrefabs:
+  - {fileID: 7395632571243132052, guid: 9259eb047092d4a119a335f104d5ef40, type: 3}
+  - {fileID: 2688141436176250653, guid: dba6dabc78a934b838b8345000002769, type: 3}
+  - {fileID: 5431989396438954775, guid: 386ca47ae86004e16b0dbcf6f3fb18e8, type: 3}
+  - {fileID: 6498124857577750376, guid: e14d91a0512164858abf5a5d646390ee, type: 3}
+  - {fileID: 8796663479530061721, guid: 7ce91f3c7dae741b6beb08f13ef34945, type: 3}
+  - {fileID: 2315176950536349986, guid: 2f5751b3b860445bfb598155a7d2a2f6, type: 3}
   speedSlider: {fileID: 369502386}
+  spawnButton: {fileID: 2095442497}
 --- !u!4 &1337471886
 Transform:
   m_ObjectHideFlags: 0
