@@ -89,9 +89,12 @@ they can pop to user automatically. Create few scripts that handle these functio
 #### 2023/3/29
 1. Try add slider or input field to control the DanceWall's speed.
 
-#### 20233/30
+#### 2023/3/30
 1. Successfully change the speed with one object, when change to six objects, 
 fail to change the speed. Also can’t change the direction of the object yet.
+
+#### 2023/4/1
+1. Can change the speed for the six objects, need to fix some buttons.
 
 ### Yufei Mei
 #### 2023/03/10
