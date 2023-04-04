@@ -51,6 +51,9 @@ to the player, and the player just need to copy the action in the screen, try to
 2. Yin Scene: create UI guide for breathing Object.
 3. Yin Scene: update the texture of object.
 
+#### 2023/4/4
+1. Yang 
+
 ### Xun Zhu
 #### 2023/3/10
 1. Quick initialize the yang scene, try to implement the screen model.
