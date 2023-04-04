@@ -99,6 +99,10 @@ fail to change the speed. Also can’t change the direction of the object yet.
 #### 2023/4/1
 1. Can change the speed for the six objects, need to fix some buttons.
 
+#### 2023/04/03
+1. Finish the slider so users can change the danceWall's speed now.
+
+
 ### Yufei Mei
 #### 2023/03/10
 1. Designed the yin room scene
