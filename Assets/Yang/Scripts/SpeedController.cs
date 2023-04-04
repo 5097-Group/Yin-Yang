@@ -7,23 +7,30 @@ public class SpeedController : MonoBehaviour
     public GameObject[] movingObjectPrefabs;
     public Slider speedSlider;
     public Button spawnButton;
+    private bool spawning = false;
 
     void Start()
     {
         speedSlider.onValueChanged.AddListener(UpdateSpeed);
-        spawnButton.onClick.AddListener(() => StartCoroutine(SpawnObjectsWithDelay(2.0f)));
+        spawnButton.onClick.AddListener(ToggleSpawning);
     }
 
+    
+    
     IEnumerator SpawnObjectsWithDelay(float delay)
     {
-        foreach (GameObject movingObjectPrefab in movingObjectPrefabs)
+        while (spawning)
         {
-            GameObject spawnedObject = Instantiate(movingObjectPrefab, new Vector3(-74,(float)-4.8,24), Quaternion.Euler(0, 0, 0));
-            MoveForward movingObjectScript = spawnedObject.GetComponent<MoveForward>();
-            movingObjectScript.speed = speedSlider.value;
+            for (int i = 0; i < movingObjectPrefabs.Length; i++)
+            {
+                GameObject movingObjectPrefab = movingObjectPrefabs[Random.Range(0, movingObjectPrefabs.Length)];
+                GameObject spawnedObject = Instantiate(movingObjectPrefab, new Vector3(-74,(float)-4.8,24), Quaternion.Euler(0, 0, 0));
+                MoveForward movingObjectScript = spawnedObject.GetComponent<MoveForward>();
+                movingObjectScript.speed = speedSlider.value;
 
-            // Wait for the specified delay
-            yield return new WaitForSeconds(delay);
+                // Wait for the specified delay
+                yield return new WaitForSeconds(delay);
+            }
         }
     }
 
@@ -36,6 +43,16 @@ public class SpeedController : MonoBehaviour
             {
                 movingObjectScript.speed = newSpeed;
             }
+        }
+    }
+
+    void ToggleSpawning()
+    {
+        spawning = !spawning;
+
+        if (spawning)
+        {
+            StartCoroutine(SpawnObjectsWithDelay(1.5f));
         }
     }
 }
