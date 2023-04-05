@@ -7,29 +7,52 @@ public class SpeedController : MonoBehaviour
     public GameObject[] movingObjectPrefabs;
     public Slider speedSlider;
     public Button spawnButton;
-    private float objectSpeed;
+    private bool spawning = false;
 
     void Start()
     {
-        objectSpeed = speedSlider.value;
         speedSlider.onValueChanged.AddListener(UpdateSpeed);
-        spawnButton.onClick.AddListener(() => StartCoroutine(SpawnObjectsWithDelay(2.0f)));
+        spawnButton.onClick.AddListener(ToggleSpawning);
+    }
+
+    
+    
+    IEnumerator SpawnObjectsWithDelay(float delay)
+    {
+        while (spawning)
+        {
+            for (int i = 0; i < movingObjectPrefabs.Length; i++)
+            {
+                GameObject movingObjectPrefab = movingObjectPrefabs[Random.Range(0, movingObjectPrefabs.Length)];
+                GameObject spawnedObject = Instantiate(movingObjectPrefab, new Vector3(-74,(float)-4.8,24), Quaternion.Euler(0, 0, 0));
+                MoveForward movingObjectScript = spawnedObject.GetComponent<MoveForward>();
+                movingObjectScript.speed = speedSlider.value;
+
+                // Wait for the specified delay
+                yield return new WaitForSeconds(delay);
+            }
+        }
     }
 
     void UpdateSpeed(float newSpeed)
     {
-        objectSpeed = newSpeed;
-    }
-
-    IEnumerator SpawnObjectsWithDelay(float delay)
-    {
         foreach (GameObject movingObjectPrefab in movingObjectPrefabs)
         {
-            GameObject spawnedObject = Instantiate(movingObjectPrefab, new Vector3(-74,(float)-4.8,24), Quaternion.identity);
-            spawnedObject.transform.Translate(-Vector3.forward * (objectSpeed * Time.deltaTime));
+            MoveForward movingObjectScript = movingObjectPrefab.GetComponent<MoveForward>();
+            if (movingObjectScript != null)
+            {
+                movingObjectScript.speed = newSpeed;
+            }
+        }
+    }
 
-            // Wait for the specified delay
-            yield return new WaitForSeconds(delay);
+    void ToggleSpawning()
+    {
+        spawning = !spawning;
+
+        if (spawning)
+        {
+            StartCoroutine(SpawnObjectsWithDelay(1.5f));
         }
     }
 }

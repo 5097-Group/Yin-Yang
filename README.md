@@ -51,6 +51,9 @@ to the player, and the player just need to copy the action in the screen, try to
 2. Yin Scene: create UI guide for breathing Object.
 3. Yin Scene: update the texture of object.
 
+#### 2023/4/4
+1. Yang 
+
 ### Xun Zhu
 #### 2023/3/10
 1. Quick initialize the yang scene, try to implement the screen model.
@@ -89,9 +92,16 @@ they can pop to user automatically. Create few scripts that handle these functio
 #### 2023/3/29
 1. Try add slider or input field to control the DanceWall's speed.
 
-#### 20233/30
+#### 2023/3/30
 1. Successfully change the speed with one object, when change to six objects, 
 fail to change the speed. Also can’t change the direction of the object yet.
+
+#### 2023/4/1
+1. Can change the speed for the six objects, need to fix some buttons.
+
+#### 2023/04/03
+1. Finish the slider so users can change the danceWall's speed now.
+
 
 ### Yufei Mei
 #### 2023/03/10
@@ -105,6 +115,24 @@ fail to change the speed. Also can’t change the direction of the object yet.
 
 #### 2023/03/15
 1. Tried to add haptic effect by default but failed
+
+#### Until 2023/04/04
+1. Changed Yin room floor to water surface
+
+2. Removed the previous Yang room skybox which is rotating and selected a style that's similar to Yin room.
+
+3. Updated Yin room welcome canvas: the background music only plays when start button is clicked
+
+4. Updated the breathing canvas and breath-assist object location and use flow
+
+5. Added an island to Yin room
+<img width="491" alt="Screenshot 2023-04-04 at 9 51 08 PM" src="https://user-images.githubusercontent.com/120827194/229985347-3dacb440-059c-41cb-aef1-71f93b00cf8f.png">
+
+6. Added fire pit object and added correspoding toggle on canvas to turn on the fire along with firing crack sound
+<img width="286" alt="Screenshot 2023-04-04 at 10 02 54 PM" src="https://user-images.githubusercontent.com/120827194/229985780-30fec631-40d1-43ff-8535-9de4ec37defb.png">
+
+7. removed fire toggle and added controlFire script to turn on and off fire pit when raycast clicks on it (FINALLY IT WORKS!!
+
 
 ### 
 #### 
