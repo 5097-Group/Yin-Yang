@@ -116,5 +116,23 @@ fail to change the speed. Also can’t change the direction of the object yet.
 #### 2023/03/15
 1. Tried to add haptic effect by default but failed
 
+#### Until 2023/04/04
+1. Changed Yin room floor to water surface
+
+2. Removed the previous Yang room skybox which is rotating and selected a style that's similar to Yin room.
+
+3. Updated Yin room welcome canvas: the background music only plays when start button is clicked
+
+4. Updated the breathing canvas and breath-assist object location and use flow
+
+5. Added an island to Yin room
+<img width="491" alt="Screenshot 2023-04-04 at 9 51 08 PM" src="https://user-images.githubusercontent.com/120827194/229985347-3dacb440-059c-41cb-aef1-71f93b00cf8f.png">
+
+6. Added fire pit object and added correspoding toggle on canvas to turn on the fire along with firing crack sound
+<img width="286" alt="Screenshot 2023-04-04 at 10 02 54 PM" src="https://user-images.githubusercontent.com/120827194/229985780-30fec631-40d1-43ff-8535-9de4ec37defb.png">
+
+7. removed fire toggle and added controlFire script to turn on and off fire pit when raycast clicks on it (FINALLY IT WORKS!!
+
+
 ### 
 #### 
