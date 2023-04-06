@@ -35,7 +35,7 @@ public class BreathingCue : MonoBehaviour
                 if (breathModeText.text != "Breathe In")
                 {
                     breathModeText.text = "Breathe In";
-                    //SendHapticImpulseToControllers(0.5f);
+                    SendHapticImpulseToControllers(0.5f);
                 }
             }
             else
