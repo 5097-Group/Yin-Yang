@@ -1,20 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: fb0d4ee8a5288f847a7b57c0419098f6
-folderAsset: yes
-=======
-<<<<<<< HEAD
-guid: e6bfabe88c3d24928900a294bf0ca2d1
-folderAsset: yes
-=======
 <<<<<<<< HEAD:Assets/Island/URP/Island_2019.3.15_URP.unitypackage.meta
 guid: 048cd7856793015419196d1fecbe3301
 ========
 guid: fb0d4ee8a5288f847a7b57c0419098f6
 folderAsset: yes
 >>>>>>>> 632e193cd09ab828b8f6a5be564f806958a5c91b:Assets/Fantasy Skybox FREE/Cubemaps.meta
->>>>>>> 632e193cd09ab828b8f6a5be564f806958a5c91b
->>>>>>> Stashed changes
 DefaultImporter:
   externalObjects: {}
   userData: 

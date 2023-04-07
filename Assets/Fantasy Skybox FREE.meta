@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 2d72ac3cb44f6c849a992141798ead6d
+=======
+<<<<<<< HEAD
+guid: 8b88bfd93c3624602b516670f5873b40
+=======
+<<<<<<<< HEAD:Assets/Fantasy Skybox FREE/Cubemaps/Classic.meta
+guid: b8f171de83d6e4a63801f80764007703
+========
+guid: 2d72ac3cb44f6c849a992141798ead6d
+>>>>>>>> 632e193cd09ab828b8f6a5be564f806958a5c91b:Assets/Fantasy Skybox FREE.meta
+>>>>>>> 632e193cd09ab828b8f6a5be564f806958a5c91b
+>>>>>>> Stashed changes
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
