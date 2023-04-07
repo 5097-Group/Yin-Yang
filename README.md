@@ -102,6 +102,12 @@ fail to change the speed. Also can’t change the direction of the object yet.
 #### 2023/04/03
 1. Finish the slider so users can change the danceWall's speed now.
 
+#### 2023/04/06
+1. Try add Oculus Integration, prefab has detection scripts. In the branch xunzhu-04/06, hasn’t push yet, doesn’t work and come with a lot errors.
+2. New branch xunzhu-04/06v2, successfully create score system, now can display the score in the console.
+3. Create UI score text to display score in the screen.
+
+
 
 ### Yufei Mei
 #### 2023/03/10

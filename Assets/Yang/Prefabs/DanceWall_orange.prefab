@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 5431989396438954773}
   - component: {fileID: 5431989396438954770}
   - component: {fileID: 462470566053792300}
+  - component: {fileID: -1411424812099336131}
+  - component: {fileID: -6079805636200097061}
   m_Layer: 0
   m_Name: DanceWall_orange
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61821,3 +61823,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62f16ab760ece4381b6e8c7c08488209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1411424812099336131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5431989396438954775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e3c36759f1b4e07b83405bba283505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &-6079805636200097061
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5431989396438954775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
