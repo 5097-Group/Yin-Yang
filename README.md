@@ -107,7 +107,9 @@ fail to change the speed. Also can’t change the direction of the object yet.
 2. New branch xunzhu-04/06v2, successfully create score system, now can display the score in the console.
 3. Create UI score text to display score in the screen.
 
-
+#### 2023/04/07
+1. Try to fix the bug: score sometimes will increase by 20.
+2. Want to implement the not perfect score system, will base on user’s action compare to the action on the danceWall’s, if 100% match, get 10, else will have some deduction.
 
 ### Yufei Mei
 #### 2023/03/10
