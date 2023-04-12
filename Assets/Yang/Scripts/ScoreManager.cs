@@ -1,27 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    public static ScoreManager Instance { get; private set; }
+    public static ScoreManager Instance;
 
-    public int CurrentScore { get; private set; }
+    private int currentScore = 0;
 
     private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (Instance == null)
         {
-            Destroy(this.gameObject);
+            Instance = this;
         }
         else
         {
-            Instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            Destroy(gameObject);
         }
     }
 
-    public void AddScore(int scoreToAdd)
+    private void OnEnable()
     {
-        CurrentScore += scoreToAdd;
-        Debug.Log("Current Score: " + CurrentScore);
+        ActionCollider.OnScoreIncremented += AddScore;
+    }
+
+    private void OnDisable()
+    {
+        ActionCollider.OnScoreIncremented -= AddScore;
+    }
+
+    public void AddScore(int value)
+    {
+        currentScore += value;
+        Debug.Log("Score incremented: " + value + " | Current score: " + currentScore);
+    }
+
+    public int GetCurrentScore()
+    {
+        return currentScore;
     }
 }
