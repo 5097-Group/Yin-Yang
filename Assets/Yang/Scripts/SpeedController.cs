@@ -12,7 +12,7 @@ public class SpeedController : MonoBehaviour
     void Start()
     {
         speedSlider.onValueChanged.AddListener(UpdateSpeed);
-        spawnButton.onClick.AddListener(ToggleSpawning);
+        // spawnButton.onClick.AddListener(ToggleSpawning);
     }
 
     
