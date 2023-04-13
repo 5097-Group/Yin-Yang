@@ -52,7 +52,11 @@ to the player, and the player just need to copy the action in the screen, try to
 3. Yin Scene: update the texture of object.
 
 #### 2023/4/4
-1. Yang 
+1. Yin Scene: fix the bugs of breathing object
+2. Main Scene: change the skybox of main room to fit other rooms' style
+
+#### 2023/4/10
+1. Implement the menu page to allow user change setting with secondaryButton
 
 ### Xun Zhu
 #### 2023/3/10
