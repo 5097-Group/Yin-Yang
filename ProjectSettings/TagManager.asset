@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wood
   - Hole
+  - PlayerHand
   layers:
   - Default
   - TransparentFX
