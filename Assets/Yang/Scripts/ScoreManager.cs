@@ -33,7 +33,7 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int value)
     {
         currentScore += value;
-        Debug.Log("Score incremented: " + value + " | Current score: " + currentScore);
+        // Debug.Log("Score incremented: " + value + " | Current score: " + currentScore);
     }
 
     public int GetCurrentScore()
