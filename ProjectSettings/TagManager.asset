@@ -6,7 +6,11 @@ TagManager:
   tags:
   - Wood
   - Hole
+<<<<<<< HEAD
   - PlayerHand
+=======
+  - Cloud
+>>>>>>> c9eab148 (updated yin with rain and cloud)
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class controlFire : MonoBehaviour
 {
-    public GameObject fireObject;
+    public ParticleSystem fire;
+    public ParticleSystem rain;
+    
+    public AudioSource fireSound;
+    public AudioSource rainSound;
 
     // private bool buttonPressed = false;
 
@@ -29,9 +33,25 @@ public class controlFire : MonoBehaviour
             {
                 if (hit.collider.gameObject.tag == "Wood")
                 {
-                    Debug.LogFormat("fire object before switch: {0}", fireObject.activeSelf);
-                    fireObject.SetActive(!fireObject.activeSelf);
-                    Debug.LogFormat("fire object after switch: {0}", fireObject.activeSelf);
+                    if (!fire.isPlaying) {
+                        fire.Play();
+                        fireSound.Play();
+                    }
+                    else {
+                        fire.Stop();
+                        fireSound.Stop();
+                    }
+                }
+                else if (hit.collider.gameObject.tag == "Cloud")
+                {
+                    if (!rain.isPlaying) {
+                        rain.Play();
+                        rainSound.Play();
+                    }
+                    else {
+                        rain.Stop();
+                        rainSound.Stop();
+                    }
                 }
             }
         }
