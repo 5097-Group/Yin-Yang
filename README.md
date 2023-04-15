@@ -143,6 +143,17 @@ fail to change the speed. Also can’t change the direction of the object yet.
 
 7. removed fire toggle and added controlFire script to turn on and off fire pit when raycast clicks on it (FINALLY IT WORKS!!
 
+#### Until 2023/04/12
+1. Built a meditation buddy model through NOMAD
+![IMG_1167](https://user-images.githubusercontent.com/120827194/232248576-6c370239-9e5c-463c-8264-676d63e49102.PNG)
+
+2. Added animation and audio source to Mediation Buddy
+
+3. Added particle system for rain simuation
+
+4. Added cloud as a trigger for rain particle system
+
+5. Optimized script for particle system triggering 
 
 ### 
 #### 
