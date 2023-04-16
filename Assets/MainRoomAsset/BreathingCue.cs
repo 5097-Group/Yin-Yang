@@ -18,7 +18,7 @@ public class BreathingCue : MonoBehaviour
     {
         float timer = 0f;
         float duration = 180f; // 3 minutes
-        float cycleDuration = 6f; // 3 seconds up + 3 seconds down
+        float cycleDuration = 12f; // 3 seconds up + 3 seconds down
         float halfCycleDuration = cycleDuration / 2;
         float scaleFactor = 0.5f;
         Vector3 initialScale = transform.localScale;
