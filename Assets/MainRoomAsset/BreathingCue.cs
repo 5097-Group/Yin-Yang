@@ -8,6 +8,8 @@ using System.Collections.Generic;
 public class BreathingCue : MonoBehaviour
 {
     public Text breathModeText;
+    public bool isBreathingEnded = false;
+    private Vector3 initialScale;
 
     public void StartBreathMode()
     {
@@ -18,13 +20,14 @@ public class BreathingCue : MonoBehaviour
     {
         float timer = 0f;
         float duration = 180f; // 3 minutes
-        float cycleDuration = 12f; // 3 seconds up + 3 seconds down
+        float cycleDuration = 6f; // 3 seconds up + 3 seconds down
         float halfCycleDuration = cycleDuration / 2;
         float scaleFactor = 0.5f;
-        Vector3 initialScale = transform.localScale;
+        initialScale = transform.localScale;
 
-        while (timer < duration)
+        while (timer < duration && !isBreathingEnded)
         {
+
             timer += Time.deltaTime;
             float cycleTimer = timer % cycleDuration;
 
@@ -45,11 +48,12 @@ public class BreathingCue : MonoBehaviour
                 if (breathModeText.text != "Breathe Out")
                 {
                     breathModeText.text = "Breathe Out";
-                    
+
                 }
             }
 
             transform.localScale = initialScale * (1 + (scaleFactor * lerpValue));
+            
             yield return null;
         }
 
@@ -72,5 +76,13 @@ public class BreathingCue : MonoBehaviour
             controller.SendHapticImpulse(0, amplitude, 3f);
         }
     }
+
+    public void EndBreathing()
+    {
+        isBreathingEnded = true;
+        transform.localScale = initialScale;
+        breathModeText.text = "";
+    }
+
 
 }
