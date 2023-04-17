@@ -114,6 +114,7 @@ fail to change the speed. Also can’t change the direction of the object yet.
 #### 2023/04/17
 1. Add solar system object
 2. Change audio
+3. Add haptic functionality
 
 
 
