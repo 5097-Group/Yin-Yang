@@ -111,6 +111,10 @@ fail to change the speed. Also can’t change the direction of the object yet.
 2. New branch xunzhu-04/06v2, successfully create score system, now can display the score in the console.
 3. Create UI score text to display score in the screen.
 
+#### 2023/04/17
+1. Add solar system object
+2. Change audio
+
 
 
 ### Yufei Mei
