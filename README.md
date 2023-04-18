@@ -16,7 +16,8 @@ Build and deploy the project to your Oculus Quest 2 device to begin exploring th
 ## Structure of the App
 ### 1. Welcome page
 The Main Scene serves as the entry point for users, allowing them to choose between the Yin Room or the Yang Room, each offering a unique experience.
-![image](https://user-images.githubusercontent.com/43577080/232643714-17ae7803-30de-4fe8-87c2-c782893b6dc4.png
+![image](https://user-images.githubusercontent.com/43577080/232867245-e5f6de39-dec8-4f9e-a6ed-7c96c335d192.png)
+
 
 ### 2. Yin Room
 In the yin room, user can enjoy the beautiful scene along with breathing guidance and soft background sound.
@@ -24,13 +25,14 @@ In the yin room, user can enjoy the beautiful scene along with breathing guidanc
 
 This scene includes the following functions:
 
-### Interactive Objects 
+### A. Interactive Objects 
 Users can interact with objects like clouds and fireworks to enhance their relaxation experience.
+![image](https://user-images.githubusercontent.com/43577080/232867579-4ceed0b8-81a8-43db-8553-e8d29070a874.png)
 
 
-### Breathing Mode
+### B. Breathing Mode
 Breathing Mode is a feature in the Yin Yang VR game designed to help users relax, unwind, and practice mindfulness.
-![image](https://user-images.githubusercontent.com/43577080/232643974-89f42579-115a-4b7c-a1f5-9cf8192784f2.png)
+![image](https://user-images.githubusercontent.com/43577080/232867750-cf242cff-58ff-4932-be83-d318e1f812fd.png)
 
 #### Features
   - **Breathing Guidance**: Upon confirmation, the sphere will scale up and down for a 3-minute session, visually guiding the user through the breathing exercise.
@@ -40,55 +42,54 @@ Breathing Mode is a feature in the Yin Yang VR game designed to help users relax
 #### Benefits
 The Breathing Mode in the Yin Yang VR game offers a relaxing, immersive experience that promotes mindfulness and helps users reduce stress. By following the guided breathing exercise, users can calm their minds, improve focus, and enhance their overall well-being.
 
-#### Meditation Mode
-
-A click on the animator object transports users into a serene meditation mode, complete with calming background music and guided meditation.
-
-### Meditation Guide Mode
+#### C. Meditation Mode
+Follow the Guided meditation toe relax.
+![image](https://user-images.githubusercontent.com/43577080/232867949-8c7c14b7-5db7-4c46-8931-63dd85f4e46d.png)
 
 ### 3. Yang Room
 In the yang room, user can gain some exercises by moving their body, there are bunch of screens will pop to the player.
 Users follow the poses displayed on the dancing wall, providing an entertaining and interactive way to stay active in the virtual world.
+![image](https://user-images.githubusercontent.com/43577080/232868203-9d161c6b-5d3b-42a3-a61b-8f8b305286f4.png)
 
 ## Update & Progress
 ### Xiaolan Wu
 #### 2023/3/10
-1. initialize welcome scene.
-2. design welcome UI for user
+1. Initialized the Welcome Scene.
+2. Designed an intuitive and user-friendly Welcome UI.
 
 #### 2023/3/11
-1. Scene Loading: uses script to load appropriate sub-scene when click button
-2. UI design: change active color when user hovers over
-3. audio: contains background sound plays continuesly while the user interacts with the UI. 
+1. Implemented Scene Loading: Scripts now load the appropriate sub-scene when buttons are clicked.
+2. Enhanced UI design: Active color changes when users hover over buttons.
+3. Integrated background audio that plays continuously while users interact with the UI.
 
 #### 2023/3/14
-1. Asset create: create hole in the wall asset with probuilder
+1. Asset Create: Created a custom "hole in the wall" asset using ProBuilder.
 
 #### 2023/3/23 &24
-1. Yang Scene: Adjust wall postion & spped to increase the experience of user
-2. Yin Scene: create basic object for hapitc function
-3. Yang Scene: Adjust the way wall spwan. Walls will be spawn only after user click ok.
+1. Yang Scene: Optimized wall position and speed for an improved user experience.
+2. Yin Scene: Created a basic object for haptic feedback functionality.
+3. Yang Scene: Modified the wall spawning mechanism, walls now spawn only after users click "OK".
 
 #### 2023/3/28
-1. Yin Scene: create breathingCue Scale Up function,  which allow object scaleup and down in loop
-2. Yin Scene: create UI guide for breathing Object.
-3. Yin Scene: update the texture of object.
+1. Yin Scene: Developed the Breathing Cue Scale Up function, allowing the object to scale up and down in a loop.
+2. Yin Scene: Created a UI guide for the breathing object.
+3. Yin Scene: Updated the object's texture for enhanced visuals.
 
 #### 2023/4/4
-1. Yin Scene: fix the bugs of breathing object
-2. Main Scene: change the skybox of main room to fit other rooms' style
+1. Yin Scene: Fixed bugs related to the breathing object.
+2. Main Scene: Updated the skybox to match the visual style of other rooms.
 
 #### 2023/4/10
-1. Implement the menu page to allow user change setting with secondaryButton in both Yin & Yang Scene
+1. Implemented a menu page in both Yin and Yang Scenes, enabling users to change settings using the secondary button.
 
 #### 2023/4/15
-1. UI improvement for menu page
-2. Seeking for meditation guide audio. 
+1. Improved the UI design for the menu page.
+2. Searched for suitable meditation guide audio resources.
 
 #### 2023/4/17
-1. Implement stop and restart cycle for "breath mode"
-2. Implement the interactive hint by adding visual cue includes label, raycast color change, vibrate.
-3. Implement the setTrigger function for avater. 
+1. Implemented "stop" and "restart" functions for the Breath Mode.
+2. Added interactive hints with visual cues, including labels, raycast color changes, and controller vibrations.
+3. Implemented the SetTrigger function for the avatar, allowing users to start animations.
 
 ### Xun Zhu
 #### 2023/3/10
@@ -147,8 +148,6 @@ fail to change the speed. Also can’t change the direction of the object yet.
 1. Add solar system object
 2. Change audio
 3. Add haptic functionality
-
-
 
 ### Yufei Mei
 #### 2023/03/10
