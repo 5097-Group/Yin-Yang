@@ -43,7 +43,7 @@ Breathing Mode is a feature in the Yin Yang VR game designed to help users relax
 The Breathing Mode in the Yin Yang VR game offers a relaxing, immersive experience that promotes mindfulness and helps users reduce stress. By following the guided breathing exercise, users can calm their minds, improve focus, and enhance their overall well-being.
 
 #### C. Meditation Mode
-Follow the Guided meditation toe relax.
+Follow the Guided meditation to relax.
 ![image](https://user-images.githubusercontent.com/43577080/232867949-8c7c14b7-5db7-4c46-8931-63dd85f4e46d.png)
 
 ### 3. Yang Room
