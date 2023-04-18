@@ -3478,9 +3478,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1f2ad53bacc245642854dbdc8ea71a9b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 33f6c71960b53e0449a5cc5c7643195f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4943,6 +4943,7 @@ GameObject:
   - component: {fileID: 1510762722}
   - component: {fileID: 1510762724}
   - component: {fileID: 1510762723}
+  - component: {fileID: 1510762725}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -5504,6 +5505,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a9c794a2932c491885521053ba40f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1510762725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510762715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6129bd99c9d8c4197ab983478f25bbb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerNode: 5
+  duration: 0.1
+  frequency: 160
+  amplitude: 0.5
 --- !u!1 &1533846811
 GameObject:
   m_ObjectHideFlags: 0
@@ -5638,13 +5655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to Yang room!
-
-
-    You can follow the screens to move your body.
-
-
-    Enjoy!'
+  m_text: "Welcome to Yang room!\n\nYou can follow the screens\n to move your body.\n\nEnjoy!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7058,6 +7069,7 @@ GameObject:
   - component: {fileID: 2037929465}
   - component: {fileID: 2037929467}
   - component: {fileID: 2037929466}
+  - component: {fileID: 2037929468}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -7619,6 +7631,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a9c794a2932c491885521053ba40f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2037929468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037929458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6129bd99c9d8c4197ab983478f25bbb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerNode: 4
+  duration: 0.1
+  frequency: 160
+  amplitude: 0.5
 --- !u!1 &2060643391
 GameObject:
   m_ObjectHideFlags: 0
