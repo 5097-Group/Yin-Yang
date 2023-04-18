@@ -15,13 +15,23 @@ Once you have Unity installed, you can download or clone this repository to your
 
 ## Structure of the App
 ### 1. Welcome page
-Allow user to select different rooms.
- 
+Allow user to select different rooms
+![image](https://user-images.githubusercontent.com/43577080/232643714-17ae7803-30de-4fe8-87c2-c782893b6dc4.png
 
 ### 2. Yin Room
 In the yin room, user can enjoy the beautiful scene along with breathing guidance and soft background sound.
 ![image](https://user-images.githubusercontent.com/120827194/225977987-14961323-de68-49e2-be9a-0f983d735128.png)
 
+What's more, user can choose different mode for depth meditation.
+
+#### Breathing Mode
+Breathing Mode is a feature in the Yin Yang VR game designed to help users relax, unwind, and practice mindfulness. In this mode, users enter the "Yin Room" for a meditative experience that guides them through a series of deep breaths.
+![image](https://user-images.githubusercontent.com/43577080/232643974-89f42579-115a-4b7c-a1f5-9cf8192784f2.png)
+##### Features
+Interactive Sphere: The Breathing Mode is activated by interacting with a sphere object in the Yin Room. Once the user selects the sphere, a UI prompt will appear, asking if they want to try the "Breathing Mode."
+Breathing Guidance: Upon confirmation, the sphere will scale up and down for a 3-minute session, visually guiding the user through the breathing exercise.
+In-Game Instructions: As the sphere scales up, a UI text element reading "Breathe In" appears, and the Oculus Quest 2 controller vibrates. When the sphere scales down, the UI text changes to "Breathe Out."
+Haptic Feedback: The Oculus Quest 2 controllers provide haptic feedback during the "Breathe In" phase, enhancing the user's immersion and mindfulness.
 
 ### 3. Yang Room
 In the yang room, user can gain some exercises by moving their body, there are bunch of screens will pop
