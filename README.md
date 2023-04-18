@@ -1,6 +1,6 @@
 # Yin-Yang
 
-Yin-Yang - rest in virtual world 🎬 youtube demo link: (tb updated)
+Yin-Yang - rest in virtual world 🎬 youtube demo link: [(Youtube link)](https://youtu.be/MhZpYduk3Ao)
 
 - **Group**: 3
 - **Members**:
@@ -24,14 +24,14 @@ In the yin room, user can enjoy the beautiful scene along with breathing guidanc
 
 What's more, user can choose different mode for depth meditation.
 
-#### Breathing Mode
-Breathing Mode is a feature in the Yin Yang VR game designed to help users relax, unwind, and practice mindfulness. In this mode, users enter the "Yin Room" for a meditative experience that guides them through a series of deep breaths.
+### Breathing Mode
+Breathing Mode is a feature in the Yin Yang VR game designed to help users relax, unwind, and practice mindfulness.
 ![image](https://user-images.githubusercontent.com/43577080/232643974-89f42579-115a-4b7c-a1f5-9cf8192784f2.png)
-##### Features
-Interactive Sphere: The Breathing Mode is activated by interacting with a sphere object in the Yin Room. Once the user selects the sphere, a UI prompt will appear, asking if they want to try the "Breathing Mode."
-Breathing Guidance: Upon confirmation, the sphere will scale up and down for a 3-minute session, visually guiding the user through the breathing exercise.
-In-Game Instructions: As the sphere scales up, a UI text element reading "Breathe In" appears, and the Oculus Quest 2 controller vibrates. When the sphere scales down, the UI text changes to "Breathe Out."
-Haptic Feedback: The Oculus Quest 2 controllers provide haptic feedback during the "Breathe In" phase, enhancing the user's immersion and mindfulness.
+
+#### Features
+  - **Breathing Guidance**: Upon confirmation, the sphere will scale up and down for a 3-minute session, visually guiding the user through the breathing exercise.
+  - **In-Game Instructions**: As the sphere scales up, a UI text element reading "Breathe In" appears, and the Oculus Quest 2 controller vibrates. When the sphere scales down, the UI text changes to "Breathe Out."
+  - **Haptic Feedback**: The Oculus Quest 2 controllers provide haptic feedback during the "Breathe In" phase, enhancing the user's immersion and mindfulness.
 
 ### 3. Yang Room
 In the yang room, user can gain some exercises by moving their body, there are bunch of screens will pop
@@ -66,7 +66,16 @@ to the player, and the player just need to copy the action in the screen, try to
 2. Main Scene: change the skybox of main room to fit other rooms' style
 
 #### 2023/4/10
-1. Implement the menu page to allow user change setting with secondaryButton
+1. Implement the menu page to allow user change setting with secondaryButton in both Yin & Yang Scene
+
+#### 2023/4/15
+1. UI improvement for menu page
+2. Seeking for meditation guide audio. 
+
+#### 2023/4/17
+1. Implement stop and restart cycle for "breath mode"
+2. Implement the interactive hint by adding visual cue includes label, raycast color change, vibrate.
+3. Implement the setTrigger function for avater. 
 
 ### Xun Zhu
 #### 2023/3/10
