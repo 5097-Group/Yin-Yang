@@ -13,6 +13,7 @@ public class BreathingCue : MonoBehaviour
 
     public void StartBreathMode()
     {
+        isBreathingEnded = false;
         StartCoroutine(ScaleSphere());
     }
 
