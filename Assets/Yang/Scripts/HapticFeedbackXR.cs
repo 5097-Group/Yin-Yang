@@ -1,51 +1,44 @@
-// Import necessary namespaces
-
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 
 public class HapticFeedbackXR : MonoBehaviour
 {
-    // Serialized fields for customizing haptic feedback in the inspector
-    [SerializeField] private XRNode controllerNode; // The controller node, LeftHand or RightHand
-    [SerializeField] private float duration = 0.1f; // Duration of the haptic feedback in seconds
-    [SerializeField] private float frequency = 160.0f; // Frequency of the haptic feedback in hertz (ignored for Oculus controllers)
-    [SerializeField] private float amplitude = 0.5f; // Amplitude (intensity) of the haptic feedback (range: 0-1)
+    // Declare public variables for specifying the controller characteristics, duration, amplitude, and frequency of the haptic feedback
+    public InputDeviceCharacteristics controllerCharacteristics;
+    public float duration = 0.1f;
+    public float amplitude = 0.5f;
+    // public float frequency = 100f;
 
-    // Called when the hand controller enters a trigger collider
-    private void OnTriggerEnter(Collider other)
+    // Declare a private InputDevice variable to store the target device
+    private InputDevice targetDevice;
+
+    // The Start method is called when the script is first initialized
+    private void Start()
     {
-        // Check if the collider has the "Hole" tag
-        if (other.CompareTag("Hole"))
+        // Create a list to store the devices found with the specified controller characteristics
+        List<InputDevice> devices = new List<InputDevice>();
+        
+        // Get the devices with the specified characteristics and store them in the list
+        InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
+
+        // If at least one device is found, assign the first device in the list to the targetDevice variable and log its name
+        if (devices.Count > 0)
         {
-            // If it does, start the haptic feedback coroutine
-            StartCoroutine(HapticCoroutine());
+            targetDevice = devices[0];
+            Debug.Log("Found device: " + targetDevice.name);
         }
     }
 
-    // Coroutine for handling haptic feedback
-    private IEnumerator HapticCoroutine()
+    // Declare a public method to trigger the haptic impulse on the controller
+    public void TriggerHapticImpulse()
     {
-        // Get the InputDevice instance for the controller node
-        InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
-        
-        // Declare a variable to store the haptic capabilities of the device
-        HapticCapabilities capabilities;
-
-        // Check if the device supports haptic feedback
-        if (device.TryGetHapticCapabilities(out capabilities) && capabilities.supportsImpulse)
+        // Check if the target device is valid
+        if (targetDevice.isValid)
         {
-            // Define the channel for sending the haptic impulse (0 is the default channel)
-            uint channel = 0;
-            
-            // Send the haptic impulse to the device
-            device.SendHapticImpulse(channel, amplitude, duration);
-            
-            // Wait for the duration of the haptic impulse
-            yield return new WaitForSeconds(duration);
-            
-            // Stop the haptic impulse on the device
-            // device.StopHapticImpulse(channel);
+            // Send the haptic impulse to the target device with the specified amplitude and duration
+            targetDevice.SendHapticImpulse(0, amplitude, duration);
         }
     }
 }
