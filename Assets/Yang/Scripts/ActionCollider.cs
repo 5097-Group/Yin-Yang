@@ -7,6 +7,7 @@ public class ActionCollider : MonoBehaviour
     public int maxScoreValue = 10;
     public float maxDistance = 1.0f; // The maximum distance for a perfect score
     private bool hasTriggered = false;
+    public HapticFeedbackXR hapticFeedback;
 
     public static event Action<int> OnScoreIncremented;
 
@@ -31,6 +32,9 @@ public class ActionCollider : MonoBehaviour
 
                 OnScoreIncremented?.Invoke(totalScore);
                 StartCoroutine(ResetTriggerCoroutine());
+                
+                // Trigger haptic feedback
+                hapticFeedback.TriggerHapticImpulse();
             }
             else
             {
