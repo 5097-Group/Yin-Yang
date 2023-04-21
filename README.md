@@ -49,7 +49,10 @@ Follow the Guided meditation to relax.
 ### 3. Yang Room
 In the yang room, user can gain some exercises by moving their body, there are bunch of screens will pop to the player.
 Users follow the poses displayed on the dancing wall, providing an entertaining and interactive way to stay active in the virtual world.
-![image](https://user-images.githubusercontent.com/43577080/232868203-9d161c6b-5d3b-42a3-a61b-8f8b305286f4.png)
+![image](https://user-images.githubusercontent.com/43577080/233514839-fefd4aa1-6dd6-431b-a5b6-5cab3ee57cb9.png)
+![image](https://user-images.githubusercontent.com/43577080/233514971-76f04817-3abf-4d1b-b8d7-6dfae9eb1f1e.png)
+![image](https://user-images.githubusercontent.com/43577080/233514903-295441c4-e3c6-4442-bb2f-26281252bbd1.png)
+
 
 ## Update & Progress
 ### Xiaolan Wu
