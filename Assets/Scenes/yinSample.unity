@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.012187382, g: 0.029907536, b: 0.043499704, a: 1}
+  m_IndirectSpecularColor: {r: 0.01241926, g: 0.030477082, b: 0.04524236, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -436,6 +436,7 @@ GameObject:
   - component: {fileID: 106075842}
   - component: {fileID: 106075844}
   - component: {fileID: 106075843}
+  - component: {fileID: 106075845}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -503,6 +504,22 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 0
+--- !u!114 &106075845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106075841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba14f451487ab4227b4c95de695633a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire: {fileID: 0}
+  rain: {fileID: 0}
+  fireSound: {fileID: 0}
+  rainSound: {fileID: 0}
 --- !u!1 &106887719
 GameObject:
   m_ObjectHideFlags: 0
@@ -8936,6 +8953,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.010188209
   m_Center: {x: -0.02426186, y: -0.004564534, z: 0.029640144}
+--- !u!114 &794339782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794339772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239831e05e3f44b64bddec92494bed45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &808789197
 GameObject:
   m_ObjectHideFlags: 0
@@ -8962,7 +8991,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808789197}
   m_LocalRotation: {x: 0.09291852, y: -0.7377059, z: -0.15423656, w: 0.6506668}
-  m_LocalPosition: {x: 0, y: 0, z: -1284}
+  m_LocalPosition: {x: 0, y: 0, z: -948}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8971,7 +9000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -6.122, y: -96.102, z: -19.861}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -891, y: -64}
+  m_AnchoredPosition: {x: -773, y: -265}
   m_SizeDelta: {x: -3578.7, y: -1921.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808789199
@@ -9328,6 +9357,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fcb9d2d43929c04f8c70c38581418d4, type: 3}
+--- !u!1 &880344763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6360420542244127411, guid: 8fcb9d2d43929c04f8c70c38581418d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 880344762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &880344765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6360420542244127410, guid: 8fcb9d2d43929c04f8c70c38581418d4,
@@ -9340,6 +9375,41 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 880344762}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &880344768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880344763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8d337e8bc7ac4498e0df29e7b8bd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3d96eaeb-a85d-4bd9-9f35-a1a7864278ed
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 4e265f06-5be3-4e3e-8aef-8939bd4d448c
+      m_Path: <OculusTouchController>/primaryButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Action
+      m_Flags: 0
+    m_Flags: 0
+  OnPress:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &951847584
 GameObject:
   m_ObjectHideFlags: 0
@@ -10881,18 +10951,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: BuddyStart
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1216705692}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 295924745}
