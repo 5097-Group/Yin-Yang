@@ -16,12 +16,13 @@ Build and deploy the project to your Oculus Quest 2 device to begin exploring th
 ## Structure of the App
 ### 1. Welcome page
 The Main Scene serves as the entry point for users, allowing them to choose between the Yin Room or the Yang Room, each offering a unique experience.
-![image](https://user-images.githubusercontent.com/43577080/232867245-e5f6de39-dec8-4f9e-a6ed-7c96c335d192.png)
+<img width="1137" alt="Screenshot 2023-04-24 at 3 10 25 PM" src="https://user-images.githubusercontent.com/120827194/234127886-1b1d7ad8-2408-4fd9-9f83-ba3e25e69098.png">
 
 
 ### 2. Yin Room
 In the yin room, user can enjoy the beautiful scene along with breathing guidance and soft background sound.
-![image](https://user-images.githubusercontent.com/120827194/225977987-14961323-de68-49e2-be9a-0f983d735128.png)
+<img width="956" alt="Screenshot 2023-04-24 at 3 11 28 PM" src="https://user-images.githubusercontent.com/120827194/234127858-ccbbb455-ec31-4e22-82b0-b6a28bce3aff.png">
+
 
 This scene includes the following functions:
 
